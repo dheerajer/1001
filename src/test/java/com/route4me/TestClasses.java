@@ -14,12 +14,12 @@ public class TestClasses {
 		System.out.println(x/y);
 	}
 	
-	//@Test(priority=2)
+	@Test(priority=2)
 	public  void testMethod2() {
 		System.out.println("####################testMethod2");
 	}
 	
-	//@Test(dependsOnMethods={"testMethod1"})
+	@Test(dependsOnMethods={"testMethod1"})
 	public  void testMethod3() {
 		System.out.println("####################testMethod3");
 		System.out.println();
