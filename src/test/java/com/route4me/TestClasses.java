@@ -1,5 +1,7 @@
 package com.route4me;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -71,4 +73,12 @@ public class TestClasses {
 	public void testMethod9() {
 		System.out.println("####################testMethod9");
 	}
-}
+
+	@Test
+	public  void testMethod() {
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+   	driver.get("https://www.softwaretestingmaterial.com/testng-introduction/");
+		
+	
+}}
