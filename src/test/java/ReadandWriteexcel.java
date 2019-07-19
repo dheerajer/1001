@@ -31,7 +31,7 @@ public class ReadandWriteexcel {
 		        //This data needs to be written (Object[])
 		        Map<String, Object[]> data = new TreeMap<String, Object[]>();
 		        
-		        new TreeMap<String,Object[]>();
+		       // new TreeMap<String,Object[]>();
 		        data.put("1", new Object[] {"ID", "NAME", "LASTNAME","ghgjgj"});
 		        data.put("2", new Object[] {1, "Amit", "Shukla","cghfhg"});
 		        data.put("3", new Object[] {2, "Lokesh", "Gupta","gfg"});

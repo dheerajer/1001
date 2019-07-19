@@ -6,7 +6,10 @@
   <test name="Test">
   
  <parameter name="sUsername" value="testuser_1"/>
+ 
  <parameter name="sPassword" value="Test@123"/>
+ <parameter name="username" value="test user 2"/>
+ <parameter name="userpass" value="test@1234"/>
   <groups>		
    <run>		
     <include name="user" />		
