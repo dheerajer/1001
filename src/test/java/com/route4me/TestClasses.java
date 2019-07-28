@@ -1,6 +1,7 @@
 package com.route4me;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -133,7 +134,7 @@ public class TestClasses {
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='s']"))).sendKeys("Ankit");
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Training']"))).click();
 	
-	
+	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	    wait.until(ExpectedConditions.alertIsPresent());
 
 	}
